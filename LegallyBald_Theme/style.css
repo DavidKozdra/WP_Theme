@@ -1,0 +1,557 @@
+/* 
+Theme Name: Legally Bald
+Text Domain: LegallyBald
+Version: 1.0
+Description: Theme Geoff Golub PA
+Tags: Auto
+Author:  David Kozdra
+Author URI: https://davidkozdra.com
+*/
+
+
+* {
+
+}
+/* theme */
+
+:root {
+    --clover-green: #218802;
+    --primary-white: #F8F8F8;
+    --primary:#9E150B;
+  }
+
+  nav {
+    background-color: var(--primary-white);
+    border: 2px solid red;
+  }
+
+  .navbar-logo {
+    height: 65px;
+    width: 65px;
+  }
+
+  .nav-container{
+    display: flex;
+    justify-content: center;
+  }
+/* FRONT-PAGE.PHP */
+  /* TOP SECTION */
+  .top-section {
+    position: relative;
+  }
+  
+  .top-section img {
+    margin: auto;
+    width: 100%;
+    height: 75vh;
+    display: block;
+  }
+  
+  .image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 128, 0, 0.8), rgba(0, 128, 0, 0));
+  }
+  
+  .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    color: var(--primary-white);
+  }
+  
+  .text-overlay h2 {
+    font-size: 28px;
+    font-weight: 200;
+  }
+  
+  /* END TOP SECTION */
+  
+  
+  
+  /* WELCOME SECTION */
+  .welcome-section {
+    text-align: center;
+    padding: 60px 0;
+  }
+  
+  .container {
+    margin: 0 auto;
+  }
+  
+ .welcome-section h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .welcome-section p {
+    font-size: 18px;
+    color: #777;
+  }
+  
+  .image-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    list-style: none;
+    flex-wrap: wrap; 
+    overflow-x: auto; 
+  }
+  
+  .image-list li {
+    flex: 0 0 auto;
+    width: 250px;
+    margin: 0 10px; 
+  }
+  
+  .image-list img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .image-list h3 {
+    font-size: 24px;
+    margin-top: 10px;
+    color: #333;
+  }
+  
+  .image-list p {
+    font-size: 16px;
+    color: #777;
+  }
+  
+  
+  /* END WELCOME SECTION */
+
+  /* WHO WE ARE SECTION */
+  .who-we-are-section {
+    background-color: var(--primary); 
+    padding: 50px 0;
+    color: #ffffff; /* White text color */
+  }
+  
+  .who-we-are-section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse; /* Reverse the order of flex items on smaller screens */
+  }
+  
+  .who-we-are-section .content {
+    flex-basis: 60%;
+    text-align: left;
+  }
+  
+  .who-we-are-section h2 {
+    font-weight: 300; /* Light font weight */
+  }
+  
+  .who-we-are-section .description {
+    font-weight: 400; /* Normal font weight */
+    margin-bottom: 20px;
+  }
+  
+  .who-we-are-section .proposal {
+    font-weight: 600; /* Heavier font weight */
+    margin-bottom: 20px;
+  }
+  
+  .who-we-are-section .cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600; 
+    border-radius: 5px;
+  }
+  
+  .who-we-are-section .image {
+    flex-basis: 35%;
+    text-align: right;
+  }
+  
+  .who-we-are-section .image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+/*  OUR SERVICES SECTION */
+.our-services-section {
+    padding: 50px 0;
+  }
+  
+  .our-services-section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .our-services-section .services {
+    flex-basis: 60%;
+  }
+  
+  .our-services-section ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .our-services-section li {
+    position: relative;
+    margin-bottom: 20px;
+    padding-left: 40px;
+  }
+  
+  .our-services-section .service-box {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    background-color: var(--primary);
+  }
+  
+  .our-services-section .image {
+    flex-basis: 35%;
+    text-align: right;
+  }
+  
+  .our-services-section .image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .our-services-section .cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--primary);
+    color:var(--primary-white);
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 5px;
+  }
+  /* END OUR SERVICES */
+
+  /* WE WORK FOR YOU SECTION  */
+  .work-for-you-section {
+    background-color: var(--primary); 
+    color: var(--primary-white);
+    padding: 50px 0;
+  }
+  
+  .work-for-you-section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .work-for-you-section .text {
+    flex-basis: 60%;
+  }
+  
+  .work-for-you-section h2 {
+    font-weight: 300; 
+    margin-bottom: 20px;
+  }
+  
+  .work-for-you-section p {
+    margin-bottom: 20px;
+  }
+  
+  .work-for-you-section .cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffffff; 
+    color: var(--primary); 
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600; 
+  }
+  
+  .work-for-you-section .image {
+    flex-basis: 35%;
+  }
+  
+  .work-for-you-section .image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  /* END WE WORK FOR YOU SECTION */
+
+/* BENEFIT SECTION */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.benefit-section {
+  background-color: #f7f7f7;
+  padding: 50px 0;
+}
+
+.benefit-section h2 {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 50px;
+  color: #333;
+}
+
+.benefit-section .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* flex-wrap: wrap; */
+}
+
+.benefit-section img {
+  max-width: 100%;
+  height: auto;
+    flex: 1;
+  padding-right: 50px;
+  border-radius: 5px;
+margin-bottom: 30px;
+}
+
+
+.benefit-section .benefits ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.benefit-section .benefits li {
+  font-size: 1.2em;
+  line-height: 1.6;
+  padding-left: 25px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.benefit-section .benefits li .bullet {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  background-color: var(--primary);
+  border-radius: 50%;
+}
+
+
+/* END BENEFIT SECTION */
+
+/* LET'S GET STARTED SECTION */
+.lets-get-started-section {
+  background-color: var(--primary);
+  padding: 50px 0;
+  color: var(--primary-white);
+}
+
+.lets-get-started-section .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.lets-get-started-section .section-content {
+  flex-basis: 60%;
+}
+
+.lets-get-started-section h2 {
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.lets-get-started-section p {
+  margin-bottom: 20px;
+}
+
+.lets-get-started-section .cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+.lets-get-started-section .section-image {
+  flex-basis: 35%;
+}
+
+.lets-get-started-section .section-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+/* END LET'S GET STARTED SECTION */
+
+
+
+.carousel-item {
+  transition: transform 2s ease;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  filter: invert(100%);
+}
+
+.carousel-item:not(.active) {
+  display: none;
+}
+
+/* END FRONT-PAGE.PHP */
+
+
+/* POS- PAGE.PHP */
+
+/* POS TOP SECTION */
+.pos-top-section {
+  position: relative;
+  padding: 50px 0;
+  color: #fff;
+  text-align: center;
+}
+
+.pos-top-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.pos-top-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 600px;
+}
+
+.pos-top-content h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.pos-top-content p {
+  font-size: 18px;
+}
+
+/* POS TOP SECTION */
+
+/* END POS PAGE.PHP */
+
+
+
+
+
+
+
+/* FOOTER STYLES */
+
+.footer-section {
+  background-color: var(--primary);
+  color: var(--primary-white);
+  padding: 50px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-nav {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.footer-nav li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.footer-nav li:last-child {
+  margin-right: 0;
+}
+
+.footer-nav li a {
+  color: var(--primary-white);
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: var(--primary);
+  transition: background-color 0.3s ease;
+}
+
+.footer-nav li a:hover {
+  background-color: #176b07;
+}
+
+.contact-info {
+  flex: 0 0 50%;
+}
+
+.contact-info p {
+  margin-bottom: 10px;
+}
+
+.stay-informed-form {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.stay-informed-form input[type="email"] {
+  width: 250px;
+  padding: 10px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.stay-informed-form button {
+  padding: 10px 20px;
+  background-color: var(--primary);
+  color: var(--primary-white);
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.stay-informed-form button:hover {
+  background-color: #176b07;
+}
+
+.footer-content p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+
+
+/* END FOOTER STYLES */
